@@ -123,7 +123,7 @@ do
 	else
 		display_number=""
 	fi
-	player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp $display_number --win \"${window_positions[$x]}\" \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
+	player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp $display_number \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
 #	player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp --win \"${window_positions[$x]}\" \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
 	echo "Starting omxplayer for ${camera_names[$i]}"
 	eval $player
@@ -231,7 +231,7 @@ do
 		else
 			display_number=""
 		fi
-		player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp $display_number --win \"${window_positions[$x]}\" \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
+		player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp $display_number \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
 #		player="omxplayer --no-keys --no-osd --avdict rtsp_transport:tcp --win \"${window_positions[$x]}\" \"${camera_feeds[$i]}\" --live -n -1 --timeout "$omx_timeout" --dbus_name "org.mpris.MediaPlayer2.omxplayer.${camera_names[$i]}" >/dev/null &"
 		echo "Starting omxplayer for ${camera_names[$i]}"
 		eval $player
