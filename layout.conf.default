@@ -44,7 +44,7 @@ window_positions=(
 
 # Camera Names
 
-camera_names=(NE SE South SW West Vestibule)
+camera_names=(Camera1 Camera2)
 # Make sure to account for each camera above in the list of feeds below.
 
 # Camera Feeds
@@ -54,18 +54,10 @@ camera_feeds=( \
 # "rtsp://xxx.xxx.xxx.xxx/yyyyy_1" \
 # Low-Res otherwise
 # "rtsp://xxx.xxx.xxx.xxx/yyyyy_2" \
-#NE
-"<Camera stream URL>" \
-#SE
-"<Camera stream URL>" \
-#South
-"<Camera stream URL>" \
-#SW
-"<Camera stream URL>" \
-#West
-"<Camera stream URL>" \
-#Vestibule
-"<Camera stream URL>" \
+#Camera1
+"" \
+#Camera2
+"" \
 )
 
 # Are we rotating cameras through the window matrix? (default false if not set here)
